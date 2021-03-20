@@ -51,6 +51,7 @@ export class PageComponent implements OnInit {
         ['textEn']: this.textEn,
         ['titleEn']: this.titleEn,
         ['date']: this.date,
+        ['state']: false,
       })
         .then(_ => this.setSaved())
         .catch(err => console.log(err, 'You dont have access!'));

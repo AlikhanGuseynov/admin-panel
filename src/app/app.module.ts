@@ -15,6 +15,7 @@ import { AllArticlesComponent } from './all-articles/all-articles.component';
 import { UploadFormComponent } from './upload-form/upload-form.component';
 import { UploadListComponent } from './upload-list/upload-list.component';
 import { UploadDetailsComponent } from './upload-details/upload-details.component';
+import { NewsListComponent } from './news-list/news-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UploadDetailsComponent } from './upload-details/upload-details.componen
     AllArticlesComponent,
     UploadFormComponent,
     UploadListComponent,
-    UploadDetailsComponent
+    UploadDetailsComponent,
+    NewsListComponent
   ],
   imports: [
     BrowserModule,
