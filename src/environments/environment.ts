@@ -22,3 +22,12 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+// service firebase.storage {
+//   match /b/{bucket}/o {
+//   match /{allPaths=**} {
+//     allow read, write: if request.auth != null;
+//   }
+// }
+// }

@@ -1,13 +1,15 @@
 .nav-link{
   transition: all 100ms ease;
+  border-bottom: 2px solid transparent;
 }
+
 .active-link {
-  font-weight: bold;
+  border-bottom: 2px solid #3184fd;
 }
 
 .navbar-nav {
   display: grid;
-  grid-template-columns: 120px 120px;
+  grid-template-columns: repeat(5, auto);
 }
 
 .nav-link {
