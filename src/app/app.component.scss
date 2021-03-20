@@ -1,3 +1,15 @@
-.active-link{
-  color: red !important;
+.nav-link{
+  transition: all 100ms ease;
+}
+.active-link {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  display: grid;
+  grid-template-columns: 120px 120px;
+}
+
+.nav-link {
+  margin-right: 10px;
 }
