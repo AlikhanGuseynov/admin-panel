@@ -10,6 +10,7 @@ import {AngularFireDatabase} from '@angular/fire/database';
 export class AllArticlesComponent implements OnInit {
 
   articleList = [];
+  loading = false;
 
   constructor(
     private firesServices: AngularFirestore,
@@ -22,11 +23,12 @@ export class AllArticlesComponent implements OnInit {
   }
 
   list(): void {
+    this.loading = true;
     this.dataBase.list('article').valueChanges()
       .subscribe(actions => {
         const arr = actions;
         this.articleList = [...arr];
-        console.log(this.articleList);
+        this.loading = false;
       });
   }
 }

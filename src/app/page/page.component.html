@@ -3,59 +3,71 @@
     <h4 class="mt-3" style="text-align: center">New Article</h4>
   </div>
 
-  <div class="container">
-    <div class="row mt-3">
-      <div class="col-4">
-        <div>
-          <label for="title-az">Az</label>
-          <div class="input-group input-group-sm mb-3">
-            <input [(ngModel)]="titleAz" placeholder="Title Az" type="text" class="form-control title" id="title-az">
+  <form #f=ngForm>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-4">
+          <div>
+            <label for="title-az">Az</label>
+            <div class="input-group input-group-sm mb-1">
+              <input required [(ngModel)]="titleAz" name="titleAz" placeholder="Title Az" type="text"
+                     class="form-control title"
+                     id="title-az">
+            </div>
+          </div>
+          <div>
+            <div class="input-group input-group-sm">
+              <textarea required [(ngModel)]="textAz" name="textAz" placeholder="Text Az" class="form-control textarea"
+                        id="text-az"></textarea>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="input-group input-group-sm">
-            <textarea [(ngModel)]="textAz" placeholder="Text Az" class="form-control textarea" id="text-az"></textarea>
+        <div class="col-4">
+          <div>
+            <label for="title-ru">Ru</label>
+            <div class="input-group input-group-sm mb-1">
+              <input required [(ngModel)]="titleRu" name="titleRu" placeholder="Title Ru" type="text"
+                     class="form-control title"
+                     id="title-ru">
+            </div>
+          </div>
+          <div>
+            <div class="input-group input-group-sm">
+              <textarea required [(ngModel)]="textRu" name="textRu" placeholder="Text Ru" class="form-control textarea"
+                        id="text-ru"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <label for="title-en">En</label>
+            <div class="input-group input-group-sm mb-1">
+              <input required [(ngModel)]="titleEn" name="titleEn" placeholder="Title En" type="text"
+                     class="form-control title"
+                     id="title-en">
+            </div>
+          </div>
+          <div>
+            <div class="input-group input-group-sm">
+              <textarea required [(ngModel)]="textEn" name="textEn" placeholder="Text En" class="form-control textarea"
+                        id="text-en"></textarea>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div>
-          <label for="title-ru">Ru</label>
-          <div class="input-group input-group-sm mb-3">
-            <input [(ngModel)]="titleRu" placeholder="Title Ru" type="text" class="form-control title" id="title-ru">
-          </div>
-        </div>
-        <div>
-          <div class="input-group input-group-sm">
-            <textarea [(ngModel)]="textRu" placeholder="Text Ru" class="form-control textarea" id="text-ru"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div>
-          <label for="title-en">En</label>
-          <div class="input-group input-group-sm mb-3">
-            <input [(ngModel)]="titleEn" placeholder="Title En" type="text" class="form-control title" id="title-en">
-          </div>
-        </div>
-        <div>
-          <div class="input-group input-group-sm">
-            <textarea [(ngModel)]="textEn" placeholder="Text En" class="form-control textarea" id="text-en"></textarea>
-          </div>
+
+      <div class="row">
+        <div class="col-3 mt-3 pb-3">
+          <button type="button" class="btn" [ngClass]="f.valid? 'btn-primary': 'btn-secondary'" (click)="save(f)">Save
+          </button>
         </div>
       </div>
 
     </div>
+  </form>
+</div>
 
 
-    <div class="row">
-      <div class="col-3 mt-3">
-        <button type="button" class="btn btn-primary" (click)="save()">Save</button>
-      </div>
-    </div>
-
-
-  </div>
-
-
+<div [ngClass]="{'active': isSaved}" class="saved-container">
+  <h3 class="saved">Saved</h3>
 </div>
