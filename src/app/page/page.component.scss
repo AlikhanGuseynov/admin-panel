@@ -1,0 +1,43 @@
+.error-input {
+  border: 1px solid rgba(255, 0, 0, .2);
+  background-color: rgba(255, 0, 0, .1);
+}
+
+.copy {
+  background-color: transparent;
+  width: min-content;
+  border: none;
+  padding: 0;
+}
+
+.page {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.copy-btn {
+  color: #000;
+  border: 1px solid #ccc;
+  padding-top: 0;
+  padding-bottom: 4px;
+}
+
+.success-copy {
+  width: 100vw;
+  height: 50px;
+  background: #dbffdb;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #107010;
+  font-weight: 600;
+  transition: all 300ms ease;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+
+  &.active {
+    display: flex;
+    opacity: 1;
+  }
+}

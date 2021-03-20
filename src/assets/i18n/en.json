@@ -1,0 +1,22 @@
+{
+  "MAIN": {
+    "title": "Are you looking to get some assistance with your appliance repair?",
+    "subtitle": "Our team of qualified Technicians is ready to fix your appliance",
+    "price": "$59",
+    "price_title": "SERVICE CALLS",
+    "price_subtitle": "No service call charge with a repair",
+    "book_appointment": "Book an appointment",
+    "work_time": "MON - SAT 8:00am - 7:00pm",
+    "how_it_works": "How It Works",
+    "how_it_works_item1_title": "Pick a Time",
+    "how_it_works_item2_title": "Pro estimate",
+    "how_it_works_item3_title": "Pay after work",
+    "how_it_works_item1_text": "Select the day and time for your service and describe the issue.",
+    "how_it_works_item2_text": "Our experienced and fully-equipped Pro will come and estimate the issue.",
+    "how_it_works_item3_text": "Once the Pro completes the work you pay for service and get our Guarantee."
+  },
+  "CALENDAR": {
+    "TITLE": "Select date",
+    "SELECT": "Seç"
+  }
+}

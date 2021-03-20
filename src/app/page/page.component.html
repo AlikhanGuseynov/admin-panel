@@ -1,0 +1,64 @@
+<div class="page">
+  <div class="row">
+    <h4 class="mt-3" style="text-align: center">New Article</h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <label for="title-az">Title - Az</label>
+        <div class="input-group mb-3">
+          <input [(ngModel)]="titleAz" type="text" class="form-control" id="title-az" aria-describedby="basic-addon3">
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="text-az">Text - Az</label>
+        <div class="input-group">
+          <textarea [(ngModel)]="textAz" class="form-control" id="text-az" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <label for="title-ru">Title - Ru</label>
+        <div class="input-group mb-3">
+          <input [(ngModel)]="titleRu" type="text" class="form-control" id="title-ru" aria-describedby="basic-addon3">
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="text-ru">Text - Ru</label>
+        <div class="input-group">
+          <textarea [(ngModel)]="textRu" class="form-control" id="text-ru" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <label for="title-en">Title - En</label>
+        <div class="input-group mb-3">
+          <input [(ngModel)]="titleEn" type="text" class="form-control" id="title-en" aria-describedby="basic-addon3">
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="text-en">Text - En</label>
+        <div class="input-group">
+          <textarea [(ngModel)]="textEn" class="form-control" id="text-en" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

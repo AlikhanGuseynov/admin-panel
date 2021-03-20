@@ -1,0 +1,50 @@
+<div class="container">
+  <ng-container *ngFor="let article of articleList">
+
+    <div class="row mt-3">
+      <div class="col-4">
+        <div>
+          <label for="title-az">Az</label>
+          <div class="input-group input-group-sm mb-3">
+            <input disabled [(ngModel)]="article.titleAz" type="text" class="form-control title" id="title-az">
+          </div>
+        </div>
+        <div>
+          <div class="input-group input-group-sm">
+            <textarea disabled [(ngModel)]="article.textAz" class="form-control textarea" id="text-az"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <label for="title-ru">Ru</label>
+          <div class="input-group input-group-sm mb-3">
+            <input disabled [(ngModel)]="article.titleRu" type="text" class="form-control title" id="title-ru">
+          </div>
+        </div>
+        <div>
+          <div class="input-group input-group-sm">
+            <textarea disabled [(ngModel)]="article.textRu" class="form-control textarea" id="text-ru"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div>
+          <label for="title-en">En</label>
+          <div class="input-group input-group-sm mb-3">
+            <input disabled [(ngModel)]="article.titleEn" type="text" class="form-control title" id="title-en">
+          </div>
+        </div>
+        <div>
+          <div class="input-group input-group-sm">
+            <textarea disabled [(ngModel)]="article.textEn" class="form-control textarea" id="text-en"></textarea>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </ng-container>
+
+
+</div>
