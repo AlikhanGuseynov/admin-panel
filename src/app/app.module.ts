@@ -9,9 +9,7 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {environment} from '../environments/environment.prod';
 import {FormsModule} from '@angular/forms';
-import {CrudService} from './services/crud.service';
-import {NewTranslateComponent} from './new-translate/new-translate.component';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import { AllArticlesComponent } from './all-articles/all-articles.component';
 
@@ -19,7 +17,6 @@ import { AllArticlesComponent } from './all-articles/all-articles.component';
   declarations: [
     AppComponent,
     PageComponent,
-    NewTranslateComponent,
     AllArticlesComponent
   ],
   imports: [
@@ -32,7 +29,7 @@ import { AllArticlesComponent } from './all-articles/all-articles.component';
     HttpClientModule,
     AppRoutingModule,
   ],
-  providers: [CrudService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
